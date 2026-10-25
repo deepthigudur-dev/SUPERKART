@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 st.title("SuperKart Sales Prediction")
-api_root = os.getenv("MODEL_API_URL", "http://localhost:7860").rstrip("/")
+api_root = os.getenv("MODEL_API_URL", "http://superkart-backend:7860").rstrip("/")
 st.subheader("Online Prediction")
 Product_Weight = st.number_input("Product Weight", value=12.66)
 Product_Sugar_Content = st.selectbox("Sugar Content", ["Low Sugar", "Regular", "No Sugar"])
